@@ -29,14 +29,16 @@
             "not dead",
             "not op_mini all"
         ],
-    "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
         ]
     },
     "devDependencies": {
         "autoprefixer": "^10.4.7",
+        "eslint": "^8.16.0",
+        "eslint-plugin-react": "^7.30.0",
         "postcss": "^8.4.14",
         "tailwindcss": "^3.0.24"
     }
