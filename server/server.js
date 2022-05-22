@@ -12,7 +12,7 @@ import cors from "cors";
 import Handler from "./handler.js";
 
 // Setup default PORT
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4000;
 
 // Create express app
 const app = express();
@@ -26,10 +26,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-if (process.env.NODE_ENV && process.env.NODE_ENV !== 'development') {
-    app.get('*', (req, res) => {
-      res.sendFile('build/index.html', { root: __dirname })
-  })
+if (process.env.NODE_ENV && process.env.NODE_ENV !== "development") {
+    app.get("*", (req, res) => {
+        res.sendFile("build/index.html", { root: __dirname });
+    });
 }
 
 // Implement Handler for server-side algorithms
